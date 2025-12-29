@@ -4,7 +4,7 @@
 [![uv](https://img.shields.io/badge/uv-latest-green.svg)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
-[![CI](https://github.com/discus0434/python-template-for-claude-code/actions/workflows/ci.yml/badge.svg)](https://github.com/discus0434/python-template-for-claude-code/actions/workflows/ci.yml)
+[![CI](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ci.yml)
 
 このリポジトリは、[Claude Code](https://www.anthropic.com/claude-code) との協働に最適化された、本番環境に対応可能なPythonプロジェクトテンプレートです。厳格な型チェック、Claude Codeのパフォーマンスを引き出すための包括的なドキュメントやテンプレート、便利なカスタムスラッシュコマンドなどを備えています。
 
@@ -45,7 +45,7 @@ claude  # /initialize-projectを実行
 ## 🔗 主要ドキュメント
 
 - **[CLAUDE.md](./CLAUDE.md)**: Claude Code向けの技術仕様と実装ガイド
-- **[template/](./template/)**: ベストプラクティスを反映したサンプルコード集
+- **[docs/](./docs/)**: 開発パターンやガイドのドキュメント集
 
 ## 📋 Claude Code チートシート
 
@@ -192,7 +192,7 @@ Claude Codeの対話モード（REPL）中に使用できるコマンドです�
 このコマンドは、プロジェクトのコード品質を一貫して高いレベルに保つために使用します。
 
 ##### /write-tests
-CLAUDE.mdで定義されているt-wada流のTDD（テスト駆動開発）に従って、高品質なテストを作成します。template/tests/ディレクトリのサンプルコードを参考にします。
+CLAUDE.mdで定義されているt-wada流のTDD（テスト駆動開発）に従って、高品質なテストを作成します。tests/ディレクトリのサンプルコードを参考にします。
 
 使用例：
 - /write-tests
@@ -208,7 +208,7 @@ Red-Green-Refactorサイクルに従い、単体テスト、プロパティベ�
 変更の種類に応じて自動的にfeature/、fix/、refactor/などのブランチを作成し、PRを生成します。
 
 ##### /safe-refactor
-テストカバレッジを維持しながら、コードを安全にリファクタリングします。template/ディレクトリの実装パターンを参考に、型安全性、エラーハンドリング、パフォーマンスを改善します。
+テストカバレッジを維持しながら、コードを安全にリファクタリングします。docs/development-patterns.md の実装パターンを参考に、型安全性、エラーハンドリング、パフォーマンスを改善します。
 
 使用例：
 - /safe-refactor
