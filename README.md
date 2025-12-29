@@ -140,9 +140,9 @@ your-project/
 │       └── utils/               # ユーティリティ（条件付き）
 │           ├── logging_config.py
 │           └── profiling.py
-├── template/                    # 参考実装
-│   ├── src/your_package/        # モデルコード
-│   └── tests/                   # テスト例
+├── {{ cookiecutter.project_slug }}/    # 生成プロジェクトのテンプレート
+│   ├── src/your_package/               # モデルコード
+│   └── tests/                          # テスト例
 ├── tests/                       # テストディレクトリ
 │   ├── unit/                    # 単体テスト
 │   ├── property/                # プロパティテスト（条件付き）
