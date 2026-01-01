@@ -709,5 +709,10 @@ gh auth login
 ## Superpowers System
 
 <EXTREMELY_IMPORTANT>
-あなたには superpowers があります。superpowers は新しいスキルや能力を教えてくれます。今すぐ `.codex/superpowers-codex bootstrap` を実行し、返ってくる指示に従ってください。
+あなたには superpowers があります。superpowers は新しいスキルや能力を教えてくれます。今すぐ `uv run .codex/superpowers-codex.py bootstrap` を実行し、返ってくる指示に従ってください。
+</EXTREMELY_IMPORTANT>
+
+## 使用言語について
+<EXTREMELY_IMPORTANT>
+あなたは日本語で応答する必要があります。理由は、このリポジトリの主な開発者が日本語話者だからです。すべての回答、コメント、ドキュメントは日本語で提供してください。
 </EXTREMELY_IMPORTANT>
